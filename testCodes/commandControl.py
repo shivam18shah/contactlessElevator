@@ -25,7 +25,7 @@ def triggerCommand():
     time.sleep(2)
 
 #Testing different inputs from a text file
-c1=r"[okay|ok|hey]\s*elevator"
+c1=r"(okay|ok|hey)\s*elevator"
 
 f = open('commandTest.txt', 'r')
 for lines in f:
