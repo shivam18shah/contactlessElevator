@@ -17,37 +17,37 @@ import RPi.GPIO as GPIO
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
-class commandParser:
+class controlCommands(object):
     
 
 #Instead of separate floors as variables we can use lookup dict of premade commands    
-    def __init__(self):
-        self.trigSignal = 21
-        self.floor1Signal = 26
+    def __init__(self,indicator=19,floor1=21,floor2=20):
+        self.trigSignal = 20
+        self.floor1Signal = 21
         self.floor2Signal = 19
-        self.trigCommand = r"(okay|ok|hey)\s*elevator"
-        self.floor1Command = r"one|first|1"
-        self.floor2Command = r"second|two|2"
+        self.trigCommand = r"(okay|ok|hey)\s*(elevator|later)"
+        self.floor1Command = r"one|first|1\s*floor"
+        self.floor2Command = r"second|two|2\s*floor"
         self.trigReceived = 0
         GPIO.setup(self.trigSignal,GPIO.OUT)
         GPIO.setup(self.floor1Signal,GPIO.OUT)
         GPIO.setup(self.floor2Signal,GPIO.OUT)
         
     def firstFloor(self):
-        self.triggerIndicatorOFF()
-        print("Floor 1 control signal generated")
+#        self.triggerIndicatorOFF()
+#        print("Floor 1 control signal generated")
         GPIO.output(self.floor1Signal,GPIO.HIGH)
-        time.sleep(5)
-        GPIO.output(self.floor1Signal,GPIO.LOW)
         time.sleep(2)
+        GPIO.output(self.floor1Signal,GPIO.LOW)
+#        time.sleep(1)
         
     def secondFloor(self):
-        self.triggerIndicatorOFF()
-        print("Floor 2 control signal generated")
+#        self.triggerIndicatorOFF()
+#        print("Floor 2 control signal generated")
         GPIO.output(self.floor2Signal,GPIO.HIGH)
-        time.sleep(5)
-        GPIO.output(self.floor2Signal,GPIO.LOW)
         time.sleep(2)
+        GPIO.output(self.floor2Signal,GPIO.LOW)
+#        time.sleep(5)
         
     def triggerIndicatorON(self):
         print("Trigger received, waiting for input")
@@ -63,16 +63,17 @@ class commandParser:
             self.trigReceived=1
             self.triggerIndicatorON()
         else:
-            print("Wrong Input")
+#            print("Wrong Input")
             self.triggerIndicatorOFF()
             
     def checkFloor(self,inp):
         if re.search(self.floor1Command,inp,re.IGNORECASE):
             self.firstFloor()
-        elif re.search(self.floor2Command,inp,re.IGNORECASE):
+        if re.search(self.floor2Command,inp,re.IGNORECASE):
             self.secondFloor()          
-        else:
-            print("Wrong Floor Input")
-            self.triggerIndicatorOFF()
+#        else:
+            
+#            print("Wrong Floor Input")
+#            self.triggerIndicatorOFF()
             
             

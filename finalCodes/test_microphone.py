@@ -2,7 +2,7 @@
 
 from vosk import Model, KaldiRecognizer
 import os
-import re
+#import re
 
 if not os.path.exists("model"):
     print ("Please download the model from https://alphacephei.com/vosk/models and unpack as 'model' in the current folder.")
@@ -10,9 +10,9 @@ if not os.path.exists("model"):
 
 import pyaudio
 
-substring1 = "Hey"
-substring2 = "Okay"
-substring3 = "Elevator"
+#substring1 = "Hey"
+#substring2 = "Okay"
+#substring3 = "Elevator"
 
 model = Model("model")
 rec = KaldiRecognizer(model, 16000)
@@ -26,10 +26,10 @@ while True:
     if len(data) == 0:
         break
     if rec.AcceptWaveform(data):
-#        print(rec.Result())
-        a = rec.Result()
-        if re.search(substring1, a, re.IGNORECASE) or re.search(substring2,a, re.IGNORECASE) or re.search(substring3,a, re.IGNORECASE):
-            print(a)
+        print(rec.Result())
+#        a = rec.Result()
+#        if re.search(substring1, a, re.IGNORECASE) or re.search(substring2,a, re.IGNORECASE) or re.search(substring3,a, re.IGNORECASE):
+#            print(a)
     else:
         print(rec.PartialResult())
 
