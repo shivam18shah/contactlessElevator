@@ -6,15 +6,19 @@ Created on Mon Jan  4 13:07:17 2021
 @author: pi
 """
 
+# =============================================================================
+# Python code for main lib and running the code
+# =============================================================================
+
+#Import libraries for all the dependencies
 from vosk import Model, KaldiRecognizer
-#import os
 import pyaudio
 import controlLib
 import RPi.GPIO as GPIO
-import time
 
+#Class declaration for OOPM inheritance and usage in main code
 class micAudio(controlLib.controlCommands):
-    
+# Can be changed during class object declaration   
     def __init__(self,modelRate=16000,sampleRate=16000,bufferSize=24000,readRate=4000):
         super().__init__(self)
         self.mrate = modelRate
@@ -23,6 +27,7 @@ class micAudio(controlLib.controlCommands):
         self.rrate = readRate
         self.strmdata = ""
         
+# Function to initialize the speech to text stream device and ML Model
     def initModel(self):
         model = Model("model")
         rec = KaldiRecognizer(model, 16000)
@@ -30,30 +35,22 @@ class micAudio(controlLib.controlCommands):
         stream = p.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=24000)
         return rec,stream
     
+# Function to start speech to text model to get text output     
     def runModel(self):
         rec,stream = self.initModel()
         stream.start_stream()
         while True:
             try:
-                data = stream.read(16000,exception_on_overflow = False)
-#                if len(data) == 0:
-#                    break
+                data = stream.read(4000,exception_on_overflow = False)
                 if rec.AcceptWaveform(data):
                     self.strmdata = rec.Result()
-#                    print(self.strmdata)
+                    print(self.strmdata)
                     self.checkTrig(self.strmdata)
-#                    print(self.trigReceived)
-#                    time.sleep(1)
                     self.checkFloor(self.strmdata)
-            #        a = rec.Result()
-            #        if re.search(substring1, a, re.IGNORECASE) or re.search(substring2,a, re.IGNORECASE) or re.search(substring3,a, re.IGNORECASE):
-            #            print(a)
                 else:
                     pass
-#                    print(rec.PartialResult())
             except:
                 stream.stop_stream()
-#                self.runModel()
                 print("Stream Stopped")
 #
 if __name__ == '__main__':
