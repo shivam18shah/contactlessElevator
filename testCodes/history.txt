@@ -1,0 +1,978 @@
+    1  ifconfig
+    2  sudo raspi-config
+    3  ks
+    4  ls
+    5  clear
+    6  python3
+    7  clear
+    8  ls
+    9  mkdir EPICS
+   10  cd EPICS/
+   11  mkdir testCodes
+   12  cd testCodes/
+   13  ls
+   14  c ~
+   15  cd ~
+   16  ls
+   17  sudo apt-get intall spyder
+   18  sudo apt-get install spyder
+   19  cd EPICS/testCodes/
+   20  ls
+   21  spyder &
+   22  cd EPICS/testCodes/
+   23  vim LEDControl.py
+   24  sudo apt-get install vi
+   25  sudo apt-get install vim
+   26  cd ~
+   27  sudo apt-get install vim
+   28  sudo apt install vim
+   29  cd EPICS/testCodes/
+   30  python ledControl.py 
+   31  pinout
+   32  spyder &
+   33  cd EPICS/testCodes/
+   34  ls
+   35  history | grep python
+   36  python ledControl.py 
+   37  vim ledControl.py 
+   38  ls
+   39  clear
+   40  spyder &
+   41  python ledControl.py 
+   42  python switchLED.py 
+   43  clear
+   44  python switchLED.py 
+   45  clear
+   46  ls
+   47  python ledControl.py 
+   48  python switchLED.py 
+   49  clear
+   50  python ledControl.py 
+   51  python switchLED.py 
+   52  clear
+   53  python switchLED.py 
+   54  python ledControl.py 
+   55  python switchLED.py 
+   56  python ledControl.py 
+   57  python switchLED.py 
+   58  python ledControl.py 
+   59  python switchLED.py 
+   60  clear
+   61  python ledControl.py 
+   62  clear
+   63  python switchLED.py 
+   64  clear
+   65  python ledControl.py 
+   66  python switchLED.py 
+   67  python ledControl.py 
+   68  clear
+   69  python switchLED.py 
+   70  python ledControl.py 
+   71  clear
+   72  python switchLED.py 
+   73  python ledControl.py 
+   74  clear
+   75  cd EPICS/testCodes/
+   76  ls
+   77  spyder &
+   78  python ledControl.py 
+   79  clear
+   80  python fourledControl.py 
+   81  clear
+   82  python fourledControl.py 
+   83  clear
+   84  python fourledControl.py 
+   85  clear
+   86  python fourledControl.py 
+   87  clear
+   88  clar
+   89  clear
+   90  spyder &
+   91  clear
+   92  cd EPICS/testCodes/
+   93  python ledControl.py 
+   94  python commandLED.py 
+   95  python commandLED.py 
+   96  python ledControl.py 
+   97  clear
+   98  python commandLED.py 
+   99  python ledControl.py 
+  100  clear
+  101  python commandLED.py 
+  102  python ledControl.py 
+  103  clear
+  104  python commandLED.py 
+  105  python ledControl.py 
+  106  clear
+  107  pinout
+  108  clear
+  109  sudo apt-get install i2c-tools
+  110  sudo apt--get install python-smbus
+  111  sudo apt-get install python-smbus
+  112  i2cdetect -y 1
+  113  clear
+  114  spyder &
+  115  clear
+  116  i2cdetect -y 1
+  117  clear
+  118  cd EPICS/testCodes/
+  119  python lcdTest.py 
+  120  i2cdetect -y 1
+  121  clear
+  122  python lcdTest.py 
+  123  sudo raspi-config
+  124  clear
+  125  i2cdetect -y 1
+  126  clear
+  127  python lcdTest.py 
+  128  clear
+  129  python lcdTest.py 
+  130  clear
+  131  python lcdTest.py 
+  132  clear
+  133  history | grep -i "i2c"
+  134  i2cdetect -y 1 sudo apt-get install i2c-tools
+  135  history | grep -i "apt-gt"
+  136  history | grep -i "apt-get"
+  137  i2cdetect -y 0
+  138  i2cdetect -y 1
+  139  clear
+  140  i2cdetect -y 1
+  141  i2cdetect -y 0
+  142  i2cdetect -y 2
+  143  clear
+  144  i2cdetect -y 1
+  145  clear
+  146  python lcdTest.py 
+  147  clear
+  148  spyder &
+  149  git --version
+  150  clear
+  151  git config --global user.name "SarthakGadre"
+  152  git config --global user.email "sugadre@asu.edu"
+  153  git config --list
+  154  clear
+  155  git config --help
+  156  clear
+  157  ls
+  158  cd EPICS
+  159  ls
+  160  cd testCodes/
+  161  ls
+  162  cd ..
+  163  clear
+  164  ls
+  165  ls -la
+  166  clear
+  167  git init
+  168  ls
+  169  ls -al
+  170  clear
+  171  ls
+  172  git status
+  173  ls
+  174  vim gitignore
+  175  cat gitignore 
+  176  mv gitignore ./.gitignore
+  177  ls
+  178  ls .al
+  179  ls -al
+  180  vim .gitignore 
+  181  clear
+  182  ls
+  183  git status
+  184  git add ./testCodes/ledControl.py 
+  185  git status
+  186  git add ./testCodes/switchLED.py 
+  187  git add ./testCodes/lcdTest.py 
+  188  git add ./testCodes/fourledControl.py 
+  189  git add ./testCodes/commandLED.py 
+  190  ls
+  191  git add ./testCodes/I2C_LCD_driver.py 
+  192  ls
+  193  cd testCodes/
+  194  ls
+  195  cd ..
+  196  git add .gitignore 
+  197  git status 
+  198  ls
+  199  clear
+  200  git status 
+  201  git reset testCodes/I2C_LCD_driver.py
+  202  git reset
+  203  git status
+  204  git add .gitignore 
+  205  git add testCodes/ledControl.py 
+  206  git status
+  207  git commit -m "First Code to control LED using GPIO"
+  208  git sattus
+  209  git status
+  210  clear
+  211  git log
+  212  clear
+  213  git branch
+  214  git branch -a
+  215  clear
+  216  ls
+  217  git pull
+  218  cd ~
+  219  clear
+  220  git config
+  221  git config --list
+  222  clear
+  223  git status
+  224  cd EPICS/
+  225  ls
+  226  git status
+  227  git pull
+  228  git branch
+  229  git push
+  230  git remote add origin htts://github.com/SarthakGadre/contactlessElevator.git
+  231  git status
+  232  git branch
+  233  git branch -M ain
+  234  git branch -M main
+  235  git pull
+  236  git remote add origin https://github.com/SarthakGadre/contactlessElevator.git
+  237  git remote remove origin
+  238  git remote add origin https://github.com/SarthakGadre/contactlessElevator.git
+  239  git pull
+  240  git branch -M main
+  241  git push -u origin main
+  242  clear
+  243  ls
+  244  clear
+  245  cd EPICS/
+  246  cd testCodes/
+  247  ls
+  248  spyder &
+  249  vim testIP.txt
+  250  cat testIP.txt 
+  251  clear
+  252  gedit testIP.txt &
+  253  vim testIP.txt &
+  254  vim testIP.txt
+  255  clear
+  256  cd EPICS/testCodes/
+  257  ls
+  258  clear
+  259  spyder &
+  260  cd EPICS/
+  261  ls
+  262  git status
+  263  git config
+  264  git config --global
+  265  git config --local
+  266  clear
+  267  git config --local
+  268  clear
+  269  git status
+  270  git add testCodes/testIP.txt testCodes/floorControl.py testCodes/commandControl.py testCodes/commandTest.txt 
+  271  git status
+  272  git commit 
+  273  git commit -m "Codes for basic regex based parser"
+  274  git push
+  275  ls
+  276  git status
+  277  ls
+  278  git add .gitignore
+  279  git commit -m "Files to ignore"
+  280  git oush
+  281  git push
+  282  git add testCodes/lcdTest.py testCodes/I2C_LCD_driver.py 
+  283  git commit -m "Driver and test code for LCD Display"
+  284  git status
+  285  clear
+  286  git status
+  287  git add testCodes/commandLED.py testCodes/fourledControl.py testCodes/switchLED.py testCodes/testInput.py 
+  288  git commit -m "Controlling Multiple LEDs using user input and switch input"
+  289  git push
+  290  clear
+  291  cd EPICS/
+  292  cd testCodes/
+  293  spyder &
+  294  ls
+  295  cd ..
+  296  ls
+  297  git status
+  298  git add testCodes/commandControl.py 
+  299  git commit -m "Updated to match multiple commands"
+  300  git push
+  301  clear
+  302  cd EPICS/testCodes/
+  303  spyder &
+  304  cd ..
+  305  clear
+  306  ls
+  307  spyder &
+  308  cd EPICS/testCodes/
+  309  python mainControl.py 
+  310  clear
+  311  cd EPICS/testCodes/
+  312  spyder &
+  313  ls
+  314  ls
+  315  git clone https://github.com/mozilla/DeepSpeech-examples
+  316  ls
+  317  cd DeepSpeech-examples/
+  318  ls
+  319  cd mic_vad_streaming/
+  320  ls
+  321  pip3 install -r requirements.txt 
+  322  sudo apt install portaudio19-dev
+  323  clear
+  324  ls
+  325  clear
+  326  cd EPICS/testCodes/
+  327  spyder &
+  328  cd ..
+  329  git status
+  330  mkdir finalCodes
+  331  cd testCodes/
+  332  ls
+  333  cd ..
+  334  cp testCodes/controlLib.py finalCodes/
+  335  cp testCodes/mainControl.py finalCodes/
+  336  ls
+  337  git status
+  338  git add finalCodes/controlLib.py 
+  339  git add finalCodes/mainControl.py 
+  340  git status
+  341  git commit -m "Function library and demo code for control"
+  342  git push
+  343  clear
+  344  cd DeepSpeech-examples/mic_vad_streaming/
+  345  ls
+  346  clear
+  347  ls
+  348  clear
+  349  ls\
+  350  ls
+  351  clear
+  352  lsusb
+  353  arecord -l
+  354  arecord -D plughw:2,0 -d 3 test.wav && aplay test.wav
+  355  ls
+  356  arecord -D plughw:2,0 -d 3 test.wav && aplay test.wav
+  357  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/ deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 2 -r 8000 -v 1
+  358  pip install scipy
+  359  ls
+  360  pip install -r requirements.txt
+  361  gedit mic_vad_streaming.py &
+  362  vim  mic_vad_streaming.py &
+  363  vim  mic_vad_streaming.py
+  364  pip3 install requirements.txt 
+  365  pip3 install -r requirements.txt 
+  366  clear
+  367  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/ deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 8000 -v 1
+  368  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/ deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 2 -r 8000 -v 1
+  369  clear
+  370  python mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/ deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 8000 -v 1
+  371  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/ deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 2 -r 8000 -v 1
+  372  cat test.sh 
+  373  sudo apt-get install python3-pip python3-dev
+  374  wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.8.0/tensorflow-1.8.0-cp35-none-linux_armv7l.whl
+  375  sudo pip3 install /tensorflow-1.8.0-cp35-none-linux_armv7l.whl
+  376  sudo apt-get install libatlas-base-dev
+  377  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/ deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 2 -r 8000 -v 1
+  378  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 2 -r 8000 -v 1
+  379  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 8000 -v 1
+  380  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 1
+  381  clear
+  382  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -v 1
+  383  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 1
+  384  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3
+  385  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 1
+  386  ls
+  387  clear
+  388  cd EPICS/
+  389  ls
+  390  cd testCodes/
+  391  ls
+  392  python commandControl.py 
+  393  clear
+  394  python floorControl.py 
+  395  clear
+  396  lsusb
+  397  alsamixer
+  398  arecord -l
+  399  arecord -D plughw:1,0 test.wav
+  400  arecord --help
+  401  arecord -L
+  402  arecord -l
+  403  arecord -D plughw:2,0 test.wav
+  404  ls
+  405  aplay test.wav 
+  406  alsamixer
+  407  arecord -D plughw:2,0 test.wav
+  408  aplay test.wav 
+  409  alsamixer
+  410  arecord -D plughw:2,0 test.wav
+  411  aplay test.wav 
+  412  cd ..
+  413  ls
+  414  cd pi/
+  415  ls
+  416  cd DeepSpeech-examples/mic_vad_streaming/
+  417  ls
+  418  history | grep -r python3 
+  419  history | grep -r "python3" 
+  420  history | grep "python3" 
+  421  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3
+  422  cd EPICS/finalCodes/
+  423  ls
+  424  spyder &
+  425  ls
+  426  cd ~
+  427  ls
+  428  cd DeepSpeech-examples/
+  429  ls
+  430  cd ..
+  431  git clone https://github.com/AIWintermuteAI/DeepSpeech_RaspberryPi4_Hotword
+  432  ls
+  433  cd DeepSpeech_RaspberryPi4_Hotword/
+  434  ls
+  435  chmod +x install.sh 
+  436  ./install.sh 
+  437  ls
+  438  python3 mic_streaming.py --keyword blueberry
+  439  python3 mic_streaming.py --keywords blueberry
+  440  ls
+  441  cd ..
+  442  ls
+  443  rm test.wav 
+  444  ls
+  445  cd DeepSpeech
+  446  cd DeepSpeech_RaspberryPi4_Hotword/
+  447  ls
+  448  python3 mic_streaming.py --keywords blueberry
+  449  python mic_streaming.py --keywords blueberry
+  450  python3 mic_streaming.py --keywords blueberry
+  451  cd DeepSpeech_RaspberryPi4_Hotword/
+  452  python3 mic_streaming.py --keywords blueberry
+  453  chmod +x install.sh 
+  454  ./install.sh 
+  455  python3 mic_streaming.py --keywords blueberry
+  456  cd ~/DeepSpeech-examples/mic_vad_streaming/
+  457  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3
+  458  ls
+  459  gedit mic_vad_streaming.py &
+  460  vim mic_vad_streaming.py &
+  461  vim mic_vad_streaming.py
+  462  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 1 -w
+  463  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 1 -w test.wav
+  464  ls
+  465  aplay test.wav 
+  466  rm test.wav 
+  467  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 1 -w test.wav
+  468  ls
+  469  aplay test.wav/
+  470  aplay test.wav
+  471  aplay test.wav 
+  472  aplay test.wav
+  473  vim mic_vad_streaming.py
+  474  arecord -D plughw:2,0 test.wav
+  475  cd test.wav/
+  476  ls
+  477  aplay savewav_2020-11-29_18-32-20_933249.wav 
+  478  aplay savewav_2020-11-29_18-32-01_500030.wav 
+  479  aplay savewav_2020-11-29_18-32-06_537997.wav 
+  480  aplay savewav_2020-11-29_18-32-12_169761.wav 
+  481  aplay savewav_2020-11-29_18-32-16_331296.wav 
+  482  clear
+  483  cd ..
+  484  rm -r test.wav/
+  485  ls
+  486  clear
+  487  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -v 3 -k
+  488  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -k
+  489  ls
+  490  clear
+  491  alsamixer
+  492  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3
+  493  clear
+  494  cd ..
+  495  ls
+  496  cd nim_mic_vad_streaming/
+  497  ls
+  498  cat README.md 
+  499  ls
+  500  cd linux_nim_vad_streaming/
+  501  ls
+  502  cat README.md 
+  503  Recognized: 
+  504  cat README.md 
+  505  sudo apt-get install libasound2
+  506  wget https://github.com/mozilla/DeepSpeech/releases/download/v0.8.0/deepspeech-0.8.0-models.pbmm
+  507  wget https://github.com/mozilla/DeepSpeech/releases/download/v0.8.0/deepspeech-0.8.0-models.scorer
+  508  nimble install https://gitlab.com/eagledot/nim-deepspeech@0.7.0
+  509  pip3 install nimble
+  510  sudo apt-get install nimble
+  511  cat README.md 
+  512  nimble install https://gitlab.com/eagledot/nim-deepspeech@0.7.0
+  513  nimble install alsa
+  514  nim c -f -d:release --threads:on vad_stream.nim
+  515  ls
+  516  cd ~
+  517  pip3 install deepspeech
+  518  ls
+  519  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gztar xvf deepspeech-0.6.1-models.tar.gz
+  520  ls
+  521  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.6.1.tar.gztar xvf audio-0.6.1.tar.gz
+  522  ls
+  523  xvf deepspeech-0.6.1-models.tar.gztar 
+  524  ls
+  525  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.6.1.tar.gztar xvf audio-0.6.1.tar.gztar
+  526  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.6.1.tar.gz tar xvf audio-0.6.1.tar.gztar
+  527  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.6.1.tar.gz tar -xvf audio-0.6.1.tar.gztar
+  528  ls
+  529  rm audio-0.6.1.tar.gztar 
+  530  rn deepspeech-0.6.1-models.tar.gztar 
+  531  rm deepspeech-0.6.1-models.tar.gztar 
+  532  clear
+  533  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.6.1.| tar.gztar xvf audio-0.6.1.tar.gztar
+  534  ls
+  535  rm audio-0.6.1.
+  536  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.6.1.tar.gz | tar -xvf audio-0.6.1.tar.gztar
+  537  ls
+  538  tar -xvf audio-0.6.1.tar.gz
+  539  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz | tar xvf deepspeech-0.6.1-models.tar.gz
+  540  ls
+  541  cd audio/
+  542  ls
+  543  cd ..
+  544  tar -xvf deepspeech-0.6.1-models.tar.gz 
+  545  deepspeech --model deepspeech-0.6.1-models/output_graph.tflite --lm deepspeech-0.6.1-models/lm.binary --trie deepspeech-0.6.1-models/trie --audio audio/2830-3980-0043.wav
+  546  ls
+  547  deepspeech --model deepspeech-0.6.1-models/output_graph.tflite --lm_alpha deepspeech-0.6.1-models/lm.binary --trie deepspeech-0.6.1-models/trie --audio audio/2830-3980-0043.wav
+  548  deepspeech --model deepspeech-0.6.1-models/output_graph.tflite --trie deepspeech-0.6.1-models/trie --audio audio/2830-3980-0043.wav
+  549  deepspeech --model deepspeech-0.6.1-models/output_graph.tflite --audio audio/2830-3980-0043.wav
+  550  ls
+  551  rm deepspeech-0.6.1-models.tar.gz 
+  552  rm audio-0.6.1.tar.gz 
+  553  rm -r deepspeech-0.6.1-models/
+  554  ls
+  555  cd DeepSpeech-examples/mic_vad_streaming/
+  556  ls
+  557  python3 ../DeepSpeech-examples/mic_vad_streaming/mic_vad_streaming.py -m ./output_graph.tflite -l lm.binary -t trie -v 3
+  558  pip3 install -r requirements.txt 
+  559  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz
+  560  curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.6.1.tar.gz
+  561  tar -xvf audio-0.6.1.tar.gz 
+  562  tar -xvf deepspeech-0.6.1-models.tar.gz 
+  563  cd DeepSpeech-examples/mic_vad_streaming/
+  564  ls
+  565  python3 mic_vad_streaming.py -m ./deeoutput_graph.tflite -l lm.binary -t trie -v 3
+  566  ls
+  567  python3 mic_vad_streaming.py -m ./deepoutput_graph.tflite -l lm.binary -t trie -v 3
+  568  python3 mic_vad_streaming.py -m ./deepspeech-0.6.1-models/output_graph.tflite -l lm.binary -t trie -v 3
+  569  vim mic_vad_streaming.py 
+  570  python3 mic_vad_streaming.py -m ./deepspeech-0.6.1-models/output_graph.tflite -t trie -v 3
+  571  python3 mic_vad_streaming.py -m ./deepspeech-0.6.1-models/output_graph.tflite -v 3
+  572  ls
+  573  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.6.1-models/output_graph.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3
+  574  clear
+  575  ls
+  576  vim test.sh 
+  577  ./test.sh 
+  578  cat test.sh 
+  579  clear
+  580  sudo apt install portaudio19-dev
+  581  ./test.sh 
+  582  chmod +x test.sh 
+  583  ./test.sh 
+  584  clear
+  585  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 1 -w test.wav
+  586  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 1 -w test.wav -f test.wav/savewav_2020-11-29_20-07-33_438073.wav 
+  587  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 1 -f test.wav/savewav_2020-11-29_20-07-33_438073.wav 
+  588  clear
+  589  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -d --device
+  590  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -d plughw:2,0
+  591  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -d 2
+  592  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -d 1
+  593  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -d 0
+  594  history | grep "a"
+  595  alsamixer
+  596  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -d 3
+  597  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -d 2
+  598  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -d 4
+  599  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -d 1
+  600  ls
+  601  cd DeepSpeech-examples/
+  602  ls
+  603  cd mic_vad_streaming/
+  604  ls
+  605  history | grep -r "python3"
+  606  history | grep -i "python3"
+  607  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer8000 -v 3
+  608  history
+  609  lsusb
+  610  clear
+  611  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.
+  612  Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+  613  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 2 -r 48000 -v 3
+  614  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 02 -r 48000 -v 3
+  615  clear
+  616  cat mic_vad_streaming.py 
+  617  gedit mic_vad_streaming.py &
+  618  z
+  619  spyder &
+  620  clear
+  621  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3
+  622  clear
+  623  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3
+  624  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 -nospinner
+  625  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 --nospinner
+  626  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3
+  627  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 0
+  628  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 2
+  629  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 1
+  630  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 0
+  631  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3
+  632  clear
+  633  sudo apt install portaudio19-dev
+  634  clear
+  635  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -d 0 -r 48000 -v 3 
+  636  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 3
+  637  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 4
+  638  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 5
+  639  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 2
+  640  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 0:2
+  641  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 0
+  642  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 1
+  643  python3 mic_vad_streaming.py -m ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.tflite -s ~/DeepSpeech-examples/mic_vad_streaming/deepspeech-0.8.2-models.scorer -r 48000 -v 3 -d 0
+  644  clear
+  645  cd ..
+  646  ls
+  647  rm -r DeepSpeech-examples/
+  648  ls
+  649  rm DeepSpeech_RaspberryPi4_Hotword/
+  650  rm -r DeepSpeech_RaspberryPi4_Hotword/
+  651  y
+  652  clear
+  653  ls
+  654  sudo rm -r DeepSpeech_RaspberryPi4_Hotword/
+  655  ls
+  656  cd EPICS/
+  657  ls
+  658  cd ..
+  659  git clone https://github.com/alphacep/vosk-api.git
+  660  ls
+  661  cd vosk-api/
+  662  ls
+  663  cd python/
+  664  ls
+  665  cat setup.py 
+  666  cd ..
+  667  cd python/
+  668  python 3 setup.py 
+  669  python3 setup.py 
+  670  ls
+  671  spyder &
+  672  pip3 install vosk
+  673  ls
+  674  cd example/
+  675  ls
+  676  python test_microphone.py 
+  677  ls
+  678  sudo pip3 install vosk
+  679  ls
+  680  python test_text.py 
+  681  ls
+  682  clear
+  683  python3 ./test_simple.py test.wav 
+  684  cd model/
+  685  ls
+  686  cd vosk-model-small-en-us-0.15/
+  687  ls
+  688  cd graph/
+  689  ls
+  690  cd ..
+  691  ls
+  692  cd conf/
+  693  ls
+  694  cd ..
+  695  ls
+  696  cat README 
+  697  ls
+  698  cd ..
+  699  ls
+  700  cd ..
+  701  python3 ./test_simple.py test.wav 
+  702  python3 test_microphone.py 
+  703  cat test_microphone.py 
+  704  vim test_microphone.py 
+  705  python3 test_microphone.py 
+  706  vim test_microphone.py 
+  707  python3 test_microphone.py 
+  708  cat test_microphone.py 
+  709  vim test_microphone.py 
+  710  python3 test_microphone.py 
+  711  ls
+  712  vim test_microphone.py 
+  713  python3 test_microphone.py 
+  714  vim test_microphone.py 
+  715  python3 test_microphone.py 
+  716  vim test_microphone.py
+  717  python3 test_microphone.py 
+  718  vim test_microphone.py
+  719  python3 test_microphone.py 
+  720  clear
+  721  vim test_microphone.py
+  722  clear
+  723  python3 test_microphone.py 
+  724  vim test_microphone.py
+  725  python3 test_microphone.py 
+  726  vim test_microphone.py
+  727  python3 test_microphone.py 
+  728  clear
+  729  ls
+  730  car test_words.py 
+  731  cat test_words.py 
+  732  car test_words.py test.wav 
+  733  python3 test_words.py test.wav 
+  734  clear
+  735  ls
+  736  cat test_empty.py 
+  737  python test_empty.py 
+  738  clear
+  739  ls
+  740  aplay test.wav
+  741  python test_simple.py test.wav
+  742  python3 test_simple.py test.wav
+  743  ls
+  744  python3 test_microphone.py 
+  745  vim test_microphone.py 
+  746  cd vosk-api/python/example
+  747  ls
+  748  vim test_microphone.py 
+  749  python3 test_microphone.py 
+  750  vim test_microphone.py 
+  751  python3 test_microphone.py 
+  752  vim test_microphone.py 
+  753  python3 test_microphone.py 
+  754  clear
+  755  python3 test_microphone.py 
+  756  vim test_microphone.py 
+  757  ls
+  758  ls -al
+  759  rm .test_microphone.py.swp 
+  760  ls
+  761  vim test_microphone.py 
+  762  python3 test_microphone.py 
+  763  clear
+  764  python3 test_microphone.py 
+  765  clear
+  766  vim test_microphone.py 
+  767  python3 test_microphone.py 
+  768  vim test_microphone.py 
+  769  python3 test_microphone.py 
+  770  clear
+  771  cd vosk-api/python/example/
+  772  python3 test_microphone.py 
+  773  ls
+  774  python3 test_microphone.py 
+  775  ls
+  776  cd vosk-api/python/example
+  777  ls
+  778  python test_microphone.py 
+  779  python3 test_microphone.py 
+  780  ls
+  781  cd vosk-api/
+  782  ls
+  783  cd python/
+  784  ls
+  785  cd ..
+  786  cd python/
+  787  ls
+  788  cd vosk/
+  789  ls
+  790  cat __init__.py 
+  791  cd ..
+  792  ls
+  793  cd test/
+  794  ls
+  795  python3 transcribe_scp.py 
+  796  cd ..
+  797  ls
+  798  cat README.md 
+  799  ls
+  800  cd example/
+  801  ls
+  802  cd model/
+  803  ls
+  804  cd ..
+  805  cp -r model/ ~/EPICS/finalCodes/
+  806  ls
+  807  cp test_microphone.py ~/EPICS/finalCodes/
+  808  cp test.wav ~/EPICS/finalCodes/
+  809  cd ~/EPICS/finalCodes/
+  810  ls
+  811  python3 test_microphone.py 
+  812  spyder &
+  813  python3 test_microphone.py 
+  814  clear
+  815  python3 test_microphone.py 
+  816  ls
+  817  cd ..
+  818  git stage finalCodes/model/
+  819  git commit "VOSK model for speech to text"
+  820  git status
+  821  git stage finalCodes/test.wav 
+  822  git stage finalCodes/test_microphone.py 
+  823  git stage testCodes/controlLib.py 
+  824  git stage testCodes/mainControl.py 
+  825  git status
+  826  git push
+  827  git push "VOSK speech to text files"
+  828  git commit -m "VOSK speech to text files"
+  829  git push -u origin master
+  830  git push
+  831  git status
+  832  git clear
+  833  git clean
+  834  git status
+  835  git push
+  836  cd EPICS/finalCodes/
+  837  python3 test_microphone.py 
+  838  ls
+  839  spyder &
+  840  python parallelTest.py 
+  841  clear
+  842  cd EPICS/
+  843  git status
+  844  git add finalCodes/parallelTest.py 
+  845  git add testCodes/parallelProcess.py 
+  846  git commit -m "Files for parallel processing and threading"
+  847  git push
+  848  cd EPICS/finalCodes/
+  849  ls
+  850  spyder &
+  851  python3 micStreaming.py 
+  852  clear
+  853  python3 mainModule.py 
+  854  python3 micStreaming.py 
+  855  clear
+  856  python3 test_microphone.py 
+  857  clear
+  858  python3 mainModule.py 
+  859  clear
+  860  python3 mainModule.py 
+  861  clear
+  862  python3 mainModule.py 
+  863  clear
+  864  python3 mainModule.py 
+  865  clear
+  866  python3 mainModule.py 
+  867  python3 micStreaming.py 
+  868  clear
+  869  python3 micStreaming.py 
+  870  ls
+  871  cd ..
+  872  git status
+  873  git add finalCodes/controlLib.py finalCodes/mainControl.py finalCodes/test_microphone.py finalCodes/mainModule.py finalCodes/micStreaming.py finalCodes/ssdCheck.py 
+  874  git commit -m "Final code for the project, needs commenting and trimming"
+  875  git push
+  876  cd EPICS/finalCodes/
+  877  ls
+  878  cd __pycache__/
+  879  ls
+  880  cd ..
+  881  ls
+  882  python3 micStreaming.py 
+  883  clear
+  884  spyder &
+  885  python3 micStreaming.py 
+  886  spyder &
+  887  python3 micStreaming.py 
+  888  cd EPICS/finalCodes/
+  889  pgrep -f micStreaming.py
+  890  ps aux
+  891  kill 1103
+  892  ps aux
+  893  kill 1693
+  894  ps aux
+  895  clear
+  896  ls
+  897  mv parallelTest.py ../testCodes/
+  898  cat mainModule.py 
+  899  clear
+  900  mv mainModule.py ../testCodes/
+  901  ls
+  902  mv ssdCheck.py ../testCodes/
+  903  mv test.wav ../testCodes/
+  904  ls
+  905  mv test_microphone.py ../testCodes/
+  906  cp -r model/ ../testCodes/
+  907  ls
+  908  cat mainControl.py 
+  909  clear
+  910  ls
+  911  mv mainControl.py ../testCodes/
+  912  ls
+  913  cd ..
+  914  cd testCodes/
+  915  l
+  916  ls
+  917  cd ..
+  918  git status
+  919  clear
+  920  ls
+  921  cd EPICS/finalCodes/
+  922  ls
+  923  spyder&
+  924  spyder &
+  925  python3 micStreaming.py 
+  926  cd EPICS/finalCodes/
+  927  python3 micStreaming.py 
+  928  clear
+  929  spyder &
+  930  python3 micStreaming.py 
+  931  clear
+  932  cd ..
+  933  ls
+  934  git status
+  935  git add testCodes/parallelTest.py
+  936  git add testCodes/mainModule.py 
+  937  git comming -m "Files for parallel threading codes"
+  938  git commit -m "Files for parallel threading codes"
+  939  ls
+  940  cd finalCodes/
+  941  ls
+  942  cd ..
+  943  git status
+  944  git add testCodes/model/
+  945  git commit -m "STT VOSK model files"
+  946  git status
+  947  git add testCodes/test_microphone.py 
+  948  git add testCodes/test.wav 
+  949  git commit -m "Code to text microphone with STT VOSK model"
+  950  git status
+  951  git add testCodes/ssdCheck.py 
+  952  ls
+  953  git commit -m "Code to test solid state relay functioning"
+  954  git status
+  955  git push
+  956  clear
+  957  git status
+  958  git add finalCodes/controlLib.py 
+  959  git add finalCodes/micStreaming.py 
+  960  git commit -m "Final codes for running prototype"
+  961  git add finalCodes/mainControl.py 
+  962  git add testCodes/mainControl.py 
+  963  git commit -m "Moving test file to testCodes folder"
+  964  git status
+  965  git add finalCodes/mainModule.py finalCodes/parallelTest.py finalCodes/ssdCheck.py finalCodes/test.wav finalCodes/test_microphone.py 
+  966  git commit -m "Moved to testCodes"
+  967  git push
+  968  ls
+  969  git status
+  970  clear
+  971  ls
+  972  cd EPICS/
+  973  cd finalCodes/
+  974  ls
+  975  pip install pipdeptree
+  976  pipdeptree
+  977  history
+  978  history > history.txt
