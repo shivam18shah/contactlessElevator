@@ -15,6 +15,7 @@ from vosk import Model, KaldiRecognizer
 import pyaudio
 import controlLib
 import RPi.GPIO as GPIO
+import os
 
 #Class declaration for OOPM inheritance and usage in main code
 class micAudio(controlLib.controlCommands):
@@ -52,10 +53,20 @@ class micAudio(controlLib.controlCommands):
             except:
                 stream.stop_stream()
                 print("Stream Stopped")
+    def getPID(self):
+        
+        f = open ("pidNo.txt",'w')
+        pidNo = str(os.getpid())
+        print(pidNo)
+        f.write(pidNo)
+        f.close
 #
 if __name__ == '__main__':
     try:
+        
+        print("Process pid is",os.getpid())
         x = micAudio(16000,16000,24000,4000)
+        x.getPID()
         x.runModel()
     except KeyboardInterrupt:
         print("Stopping code execution")

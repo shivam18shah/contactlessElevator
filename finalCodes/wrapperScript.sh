@@ -8,7 +8,7 @@ then
 	python3 "$PWD"/"$( basename "micStreaming.py" )"
 else
 	curPID=$(<"$file")
-	PID="$(pgrep -f micStreaming.py)"
+	PID="$(pgrep -f micStreaming.py &)"
 	if [ "$curPID" != "$PID" ]
 	then
 		rm $file
