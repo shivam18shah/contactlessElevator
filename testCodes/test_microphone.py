@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
 from vosk import Model, KaldiRecognizer
+import logging
 import os
 #import re
 
 if not os.path.exists("model"):
     print ("Please download the model from https://alphacephei.com/vosk/models and unpack as 'model' in the current folder.")
+    logging.basicConfig('Model does not exist')
     exit (1)
 
 import pyaudio

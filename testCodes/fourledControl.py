@@ -11,6 +11,7 @@ Created on Mon Oct 12 15:40:08 2020
 
 import RPi.GPIO as GPIO
 import time
+
 GPIO.setwarnings(False)
 # Using BCM pinout for RaspberryPi. Other option is BOARD pinout.
 GPIO.setmode(GPIO.BCM)

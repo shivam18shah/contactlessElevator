@@ -11,6 +11,7 @@ Created on Mon Oct 12 16:52:56 2020
 
 import RPi.GPIO as GPIO
 import time
+import logging
 GPIO.setwarnings(False)
 # Using BCM pinout for RaspberryPi. Other option is BOARD pinout.
 GPIO.setmode(GPIO.BCM)
@@ -47,5 +48,6 @@ while True:
     elif(cS == 'w'):
         GPIO.output(19,GPIO.LOW)
     else:
-        print("Incorrect input please select again")
+        logging.error('Incorrect input please select again')
+        # print("Incorrect input please select again")
 #        

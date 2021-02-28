@@ -7,6 +7,7 @@ This is a temporary script file.
 # necessary to control the GPIO pins
 import RPi.GPIO as GPIO
 import time
+import logging
 GPIO.setwarnings(False)
 # Using BCM pinout for RaspberryPi. Other option is BOARD pinout.
 GPIO.setmode(GPIO.BCM)
@@ -19,10 +20,12 @@ GPIO.setup(21,GPIO.OUT)
 #if you connect the pin to anode of the led
 #other wise reverse connection
 #Always connect led in series with led to limit current to avoid boom.
-print("Led on")
+# print("Led on")
+logging.debug('LED on')
 GPIO.output(21,GPIO.HIGH)
 time.sleep(1)
-print("Led off")
+# print("Led off")
+logging.debug('LED off')
 GPIO.output(21,GPIO.LOW)
 time.sleep(1)
 GPIO.cleanup()

@@ -9,12 +9,14 @@ Created on Thu Oct 29 21:42:09 2020
 #import controlLib
 import time
 from threading import Timer
+import logging
 #f = controlLib.commandParser()
 
 #def input_with_timeout(x):
     
 def time_up():
-    print("Time up,try again")
+    # print("Time up,try again")
+    logging.error('Time up, please try again')
     
     
 #    t = Timer(x,time_up)

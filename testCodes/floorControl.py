@@ -9,6 +9,7 @@ Created on Wed Oct 21 19:27:03 2020
 import re
 import time
 import RPi.GPIO as GPIO
+import logging
 GPIO.setwarnings(False)
 # Using BCM pinout for RaspberryPi. Other option is BOARD pinout.
 GPIO.setmode(GPIO.BCM)
@@ -20,14 +21,16 @@ GPIO.setup(19,GPIO.OUT)
 
 #Function to generate control signal for floor 1
 def firstFloor():
-    print("Taking elevator to first floor")
+    # print("Taking elevator to first floor")
+    logging.info('Taking the elevator to the first floor')
     GPIO.output(19,GPIO.HIGH)
     time.sleep(5)
     GPIO.output(19,GPIO.LOW)
     
 #Function to generate control signal for floor 2
 def secondFloor():
-    print("Taking elevator to second floor")
+    # print("Taking elevator to second floor")
+    logging.info('Taking the elevator to the second floor')
     GPIO.output(21,GPIO.HIGH)
     time.sleep(5)
     GPIO.output(21,GPIO.LOW)
@@ -44,7 +47,8 @@ for lines in f:
     elif re.search(m2,lines,re.IGNORECASE):
         secondFloor()
     else:
-        print("Wrong Input")        
+        print("Wrong Input")
+        logging.error('Invalid input')      
 f.close()
 
 

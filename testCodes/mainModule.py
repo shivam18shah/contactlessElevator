@@ -9,6 +9,7 @@ Created on Mon Jan  4 16:41:26 2021
 import micStreaming
 import controlLib
 import threading
+import logging
 import time
 
 
@@ -37,5 +38,6 @@ if __name__ == '__main__':
         p1.join()
 #        p2.join()
     except KeyboardInterrupt:
-        print("Stopping code execution")
-        print("Restart the script")        
+        # print("Stopping code execution")
+        logging.exception('Stopping code execution and restarting')
+        # print("Restart the script")     

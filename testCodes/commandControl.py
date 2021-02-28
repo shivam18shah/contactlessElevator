@@ -9,6 +9,7 @@ Created on Thu Oct 22 19:13:52 2020
 import re
 import time
 import RPi.GPIO as GPIO
+import logging
 
 GPIO.setwarnings(False)
 # Using BCM pinout for RaspberryPi. Other option is BOARD pinout.
@@ -18,14 +19,15 @@ GPIO.setup(26,GPIO.OUT)
 
 #Function to generate control signal for floor 1
 def triggerCommand():
-    print("Trigger command received")
+    logging.debug('Trigger command received')
+    # print("Trigger command received")
     GPIO.output(26,GPIO.HIGH)
     time.sleep(5)
     GPIO.output(26,GPIO.LOW)
     time.sleep(2)
 
 #Testing different inputs from a text file
-c1=r"(okay|ok|hey)\s*elevator"
+c1=r"(okay|ok|hey|hi)\s*elevator"
 
 f = open('commandTest.txt', 'r')
 for lines in f:
@@ -33,7 +35,8 @@ for lines in f:
     if re.search(c1,lines,re.IGNORECASE):
         triggerCommand()
     else:
-        print("Wrong Input")        
+        # print("Wrong Input") 
+        logging.error('Wrong input')      
 f.close()
 
 

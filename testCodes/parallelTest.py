@@ -8,6 +8,7 @@ Created on Sat Jan  2 15:54:29 2021
 
 import threading
 import time
+import logging
 
 class sharing(object):
 
@@ -40,7 +41,8 @@ if __name__ == '__main__':
         p1.join()
         p2.join()
     except KeyboardInterrupt:
-        print("Stopping code execution")
+        # print("Stopping code execution")
+        logging.exception('Stopping code execution')
 
 # =============================================================================
 # https://stackoverflow.com/questions/11436502/closing-all-threads-with-a-keyboard-interrupt
