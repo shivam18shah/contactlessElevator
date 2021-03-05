@@ -1,4 +1,4 @@
-# contactlessElevator v1
+# Contactless Elevator v1
 
 How to set up RaspberryPi
 
@@ -72,7 +72,7 @@ Final installation
         Male to female or female to female connectors (included in the components ordered) can be used to make all the other  connections (except the one colored red in the circuit diagram) wherever required.
         Anything specific to the pinout diagram of individual diagrams eg (solid state relay - to understand which pin is which (total 4 pins on ssd)) can be found by Google search of the specific part.
 
-    Common practices and suggestions:
+    Common practices and suggestions for this part:
         Check individual parts before making the final connection, check voltages using multimeter to check if the voltages and currents are in range and do not damage the components.
         You can type the command “pinout” (without double quotes) in the RaspberryPi terminal to get the pin diagram of RaspberryPi 4 GPIOs.
         Remember to turn off the Wifi connection of RaspberryPi after programming to avoid it getting tampered with. It is a requirement that RPi remains offline.
