@@ -16,6 +16,7 @@ import pyaudio
 import controlLib
 import RPi.GPIO as GPIO
 import os
+import logging
 
 #Class declaration for OOPM inheritance and usage in main code
 class micAudio(controlLib.controlCommands):
@@ -45,30 +46,36 @@ class micAudio(controlLib.controlCommands):
                 data = stream.read(4000,exception_on_overflow = False)
                 if rec.AcceptWaveform(data):
                     self.strmdata = rec.Result()
-                    print(self.strmdata)
+                    logging.info(self.strmdata)
+                    # print(self.strmdata)
                     self.checkTrig(self.strmdata)
                     self.checkFloor(self.strmdata)
                 else:
                     pass
             except:
                 stream.stop_stream()
-                print("Stream Stopped")
+                # print("Stream Stopped")
+                logging.exception('Stream stopped')
+
+
     def getPID(self):
-        
         f = open ("pidNo.txt",'w')
         pidNo = str(os.getpid())
         print(pidNo)
         f.write(pidNo)
         f.close
-#
+
+
 if __name__ == '__main__':
     try:
-        
-        print("Process pid is",os.getpid())
+        logging.info('Process pid is: ', os.getpid())
+        # print("Process pid is",os.getpid())
         x = micAudio(16000,16000,24000,4000)
         x.getPID()
         x.runModel()
     except KeyboardInterrupt:
-        print("Stopping code execution")
-        print("Restart the script")   
+        logging.exception('Stopping code execution')
+        # print("Stopping code execution")
+        logging.info('Restart the script')
+        # print("Restart the script")   
         GPIO.cleanup()
